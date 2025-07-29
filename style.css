@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url("/uni\ logo.jpg");
+    background-size: cover;
+}
+
+.nav_bar {
+    width: 100%;
+    height:fit-content;
+    background-color: rgba(0, 0, 0, 0.331);
+    display: flex;
+
+}
+
+
+.logo {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    background-size: cover;
+    margin-left: 0.5rem;
+    align-self: center;
+    background-color: transparent;
+}
+
+.text_web {
+    text-align: center;
+    opacity: 0;
+    padding: 1rem 0 0 0;
+}
+
+.logo:hover .text_web {
+    opacity: 1;
+    color: rgb(91, 11, 11);
+
+}
+
+.menus {
+    width: 80%;
+    height: 60px;
+    margin-top: 1rem;
+    margin-left: 12rem;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.menus2 {
+    text-decoration: none;
+    color: rgb(91, 11, 11);
+    font-size: 1.5rem;
+    align-self: center;
+    font-weight: 800;
+
+}
+
+.menus2:hover {
+    color: rgba(4, 0, 0, 0.988);
+}
+
+.about_cst {
+    width: 100%;
+    height: 15rem;
+}
+
+.cst {
+    text-align: center;
+    color: rgb(6, 50, 83);
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.cst_text {
+    font-size: 1.2rem;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.content {
+    color: rgb(10, 62, 101);
+    text-align: justify;
+}
+
+.info_dean {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vc {
+    width: 70%;
+    height: 20rem;
+    border: 3px solid rgb(179, 176, 176);
+    border-radius: 2rem;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.vc:hover {
+    border: 5px solid rgb(25, 44, 106);
+}
+
+.vc_pic {
+    width: 30%;
+    height: 80%;
+    border-radius: 100%;
+    background-size: cover;
+    margin-top: 2rem;
+}
+
+.vc_info {
+    width: 65%;
+    height: 18rem;
+    margin-top: 1rem;
+}
+
+#main_head {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(91, 11, 11);
+    font-weight: 700;
+}
+
+.other_info {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(118, 10, 59);
+    text-align: justify;
+}
+
+.foot_bar {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    color: rgb(235, 237, 240);
+}
+
+/* Responsive layout for medium screens (tablets & small desktops) */
+@media screen and (max-width: 1024px) {
+    .menus {
+        margin-left: 2rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .vc {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        padding: 1rem;
+    }
+
+    .vc_pic {
+        width: 40%;
+        height: auto;
+        aspect-ratio: 1/1;
+        margin-top: 1rem;
+    }
+
+    .vc_info {
+        width: 90%;
+        height: auto;
+    }
+
+    .cst_text {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Responsive layout for small screens (phones) */
+@media screen and (max-width: 768px) {
+    .nav_bar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .menus {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        gap: 0.5rem;
+        width: auto;
+    }
+
+    .menus2 {
+        font-size: 1.2rem;
+    }
+
+    .about_cst {
+        height: auto;
+    }
+
+    .cst {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    .cst_text {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .vc {
+        width: fit-content;
+        flex-direction: column;
+        height: fit-content;
+        padding: 1rem;
+        margin-right: 15%;
+    }
+
+    .vc_pic {
+        width: 60%;
+        height: auto;
+        aspect-ratio: 1/1;
+        margin-top: 1rem;
+    }
+
+    .vc_info {
+        width: fit-content;
+        height: auto;
+    }
+
+    .other_info {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #main_head {
+        font-size: 1.5rem;
+    }
+
+    .foot_bar {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+    .menus2 {
+        font-size: 1rem;
+    }
+
+    .cst {
+        font-size: 1.6rem;
+    }
+
+    .content {
+        font-size: 0.95rem;
+    }
+
+    .other_info {
+        font-size: 0.9rem;
+    }
+
+    .vc_pic {
+        width: 80%;
+    }
+
+    .foot_bar {
+        font-size: 0.8rem;
+    }
+}
