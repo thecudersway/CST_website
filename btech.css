@@ -1,0 +1,129 @@
+body {
+  background-image: url("/DEPARTMENT/BTECH/bg4.png");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
+  /* background-color: #fcf6f6; Ligh39t pink */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  /* position: absolute; */
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  padding-top: 40px;
+  font-family: "Oswald", sans-serif;
+}
+
+.heading-text {
+  font-size: 50px;
+  color: rgba(14, 2, 2, 0.886);
+  margin: 0;
+}
+
+.faculty-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin: 2rem auto;
+  width: 80%;
+  padding: 20px 60px 20px 60px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.faculty-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.left-image img {
+  margin-top: 2rem;
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.right-description {
+  max-width: 70%;
+  color: rgb(7, 1, 1);
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  /* padding: 0 0 0 100px; */
+}
+
+.faculty-image:hover {
+  border: 2px solid transparent;
+  background-color:transparent;
+  transform: scale(1.03);
+  box-shadow: 0 6px 35px rgba(90, 5, 29, 0.5);
+}
+@media (max-width: 1024px) {
+  .heading-text {
+    font-size: 40px;
+  }
+
+  .faculty-image {
+    gap: 40px;
+    padding: 20px 40px;
+  }
+
+  .right-description {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faculty-image {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .left-image img {
+    width: 180px;
+    height: 180px;
+    margin-top: 0;
+  }
+
+  .right-description {
+    max-width: 100%;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .heading-text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faculty-image {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .left-image img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .right-description {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .heading-text {
+    font-size: 24px;
+  }
+}
