@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("/cuders_background.png");
+    background-image: url("cuders_background.png");
     background-size: cover;
 }
 
@@ -27,7 +27,7 @@ body {
     margin-top: 2rem;
     margin-left: 15%;
     border-radius: 2rem;
-    background-image: url("/cuders_group3.jpg");
+    background-image: url("cuders_group3.jpg");
     background-size: cover;
     background-position: center;
 }
