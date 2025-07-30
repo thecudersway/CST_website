@@ -183,3 +183,15 @@ body {
         height: 1.5rem;
     }
 }
+
+@media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects for touch devices */
+    
+    #creator_text:hover,
+    .sub_container:hover
+     {
+        border: none;
+        box-shadow: none;
+        transform: none;
+    }
+}
