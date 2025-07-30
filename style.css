@@ -99,8 +99,7 @@ body {
     height: 20rem;
     border: 3px solid rgb(179, 176, 176);
     border-radius: 2rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    align-self: center;
     display: flex;
     justify-content: space-evenly;
     margin-top: 1rem;
