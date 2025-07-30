@@ -133,6 +133,11 @@ body {
         height: auto;
     }
 
+     .sub_container:hover{
+        height: fit-content;
+        padding-bottom: 1rem;
+    }
+
     .photo {
         width: 80%;
     }
