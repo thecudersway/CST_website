@@ -46,7 +46,7 @@ a.active:hover {
 /* Floor Map Styling */
 .Floormap {
   width: 45%;
-  background-image: url("/FLOOR Map hai-Photoroom.png");
+  background-image: url("FLOOR Map hai-Photoroom.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
