@@ -219,7 +219,7 @@ body {
         flex-direction: column;
         height: fit-content;
         padding: 1rem;
-        margin-right: 15%;
+        align-self: center;
     }
 
     .vc_pic {
