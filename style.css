@@ -34,7 +34,7 @@ body {
 
 .logo:hover .text_web {
     opacity: 1;
-    color: rgb(91, 11, 11);
+    color: rgb(73, 21, 21);
 
 }
 
@@ -51,7 +51,7 @@ body {
 
 .menus2 {
     text-decoration: none;
-    color: rgb(91, 11, 11);
+    color: rgb(73, 21, 21);
     font-size: 1.5rem;
     align-self: center;
     font-weight: 800;
@@ -126,14 +126,14 @@ body {
 #main_head {
     text-align: center;
     font-size: 2rem;
-    color: rgb(91, 11, 11);
+    color: rgb(73, 21, 21);
     font-weight: 700;
 }
 
 .other_info {
     font-size: 1.2rem;
     font-weight: 300;
-    color: rgb(118, 10, 59);
+    color: rgb(228, 225, 225);
     text-align: justify;
 }
 
