@@ -54,7 +54,6 @@ body {
   line-height: 1.6;
   max-width: 90%;
   text-align: justify;
-  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* Grid on right */
@@ -129,4 +128,5 @@ body {
   }
 
 }
+
 
