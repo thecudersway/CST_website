@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body {
-  background-image: url('trial4.png');
+  background-image: url('bg2.png');
   background-size: cover;         /* cover full screen */
   background-repeat: no-repeat;   /* no repeat */
   background-position: center;    /* center the image */
@@ -71,5 +71,6 @@ header {
     max-width: 90%;
   }
 }
+
 
 
