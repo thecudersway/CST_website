@@ -133,7 +133,7 @@ body {
 .other_info {
     font-size: 1.2rem;
     font-weight: 300;
-    color: rgb(228, 225, 225);
+    color: rgb(73, 21, 21);
     text-align: justify;
 }
 
@@ -141,7 +141,7 @@ body {
     width: 100%;
     height: fit-content;
     text-align: center;
-    color: rgb(235, 237, 240);
+    color: rgb(73, 21, 21);
 }
 
 /* Responsive layout for medium screens (tablets & small desktops) */
@@ -281,5 +281,6 @@ body {
         font-size: 0.8rem;
     }
 }
+
 
 
