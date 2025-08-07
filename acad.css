@@ -1,147 +1,167 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-image: url("coolbackgrounds-fractalize-sea_edge\ \(1\).png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+      font-family: Arial, sans-serif;
+      background-image: url("coolbackgrounds-fractalize-sea_edge (1).png");
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
 
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  color: rgb(32, 29, 29);
-  text-decoration: underline;
-}
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0a0a0a;
+      font-size: 2rem;
+    }
 
-a {
-  text-decoration: none;
-  color: rgb(63, 3, 3);
-}
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap; 
+    }
 
-a.active:hover {
-  color: rgb(192, 14, 14);
-}
+    .accordion {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+    }
 
-.main {
-  width: 100%;
-  padding: 1rem;
-  text-align: center;
-}
+    .accordion input {
+      display: none;
+    }
 
-.main_box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem;
-}
+    .accordion label {
+      display: block;
+      background: #007bff;
+      color: #fff;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 8px;
+      margin: 5px 0;
+    }
 
-/* Content box */
-#box {
-  width: 50%;
-  position: relative;
-}
+    .accordion .content {
+      display: none;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 5px;
+    }
 
-/* Floor Map Styling */
-.Floormap {
-  width: 45%;
-  background-image: url("FLOOR Map hai-Photoroom.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  z-index: 3;
-  position: relative;
-  margin-top: 2rem;
-  height: 600px;
-}
+    .accordion input:checked + label + .content {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
 
-.floor_text {
-  text-align: center;
-  margin-top: 1rem;
-  color: rgb(24, 22, 22);
-}
+    .nested input {
+      display: none;
+    }
 
-/* Card Styles */
-.card {
-  /* background-color: rgba(255, 255, 255, 0.85); */
-  border-radius: 15px;
-  margin: 1rem;
-  padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+    .nested label {
+      display: block;
+      background: #eee;
+      color: #333;
+      padding: 10px;
+      margin: 5px 0;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
 
-.card:hover{
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-.card-content {
-  padding-left: 1rem;
-}
+    .nested .subcontent {
+      display: none;
+      padding: 10px 20px;
+      background: #fafafa;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
 
-li {
-  margin-bottom: 0.5rem;
-}
+    .nested input:checked + label + .subcontent {
+      display: block;
+      animation: slideDown 0.3s ease-in-out;
+    }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  #box {
-    width: 100%;
-  }
+    li {
+      margin: 8px 0;
+      list-style: none;
+    }
 
-  .Floormap {
-    width: 100%;
-    height: 400px;
-    background-size: contain;
-    background-position: center;
-  }
-}
+    a {
+      text-decoration: none;
+      color: #141414;
+      font-weight: bold;
+    }
 
-@media (max-width: 768px) {
-  .main_box {
-    flex-direction: column;
-    align-items: center;
-  }
+    a:hover {
+      text-decoration: underline;
+      color: #204abb;
+    }
 
-  #box, .Floormap {
-    width: 90%;
-    height: auto;
-    position: relative;
-  }
+    p{
+      color: #007bff;
+      size: 12rem;
+    }
 
-  .Floormap {
-    background-size: contain;
-    height: 300px;
-  }
+    .Floormap {
+      flex: 1;
+      width: 50rem;
+      height:50rem;
+      background-image: url("FLOOR Map hai-Photoroom.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+    }
 
-  h1 {
-    font-size: 2rem;
-  }
+    .floor_text {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #222;
+    }
 
-  .floor_text {
-    margin-top: 1.5rem;
-  }
-}
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
 
-@media (max-width: 480px) {
-  .card1, .card2, .card3, .card4 {
-    padding: 0.8rem;
-  }
+    @keyframes slideDown {
+      from {max-height: 0; opacity: 0;}
+      to {max-height: 500px; opacity: 1;}
+    }
 
-  li a {
-    font-size: 0.95rem;
-  }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .Floormap {
+        height: 300px;
+        width: 100%;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
 
-  h1 {
-    font-size: 1.3rem;
-  }
-
-  .Floormap {
-    height: 220px;
-    background-size: contain;
-  }
-
-  .floor_text h2 {
-    font-size: 1.2rem;
-  }
-}
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.4rem;
+      }
+      .accordion label {
+        font-size: 15px;
+        padding: 12px;
+      }
+      .nested label {
+        font-size: 14px;
+      }
+      .Floormap {
+        height: 220px;
+      }
+    }
