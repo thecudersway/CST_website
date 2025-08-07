@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
   background-image: url('trial3.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: 'Seoge UI', sans-serif;
+  background-size: cover;         /* cover full screen */
+  background-repeat: no-repeat;   /* no repeat */
+  background-position: center;    /* center the image */
+  font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
   padding: 0 10px;
+  background-attachment: fixed;
 }
 
 hr{
@@ -18,7 +19,7 @@ header {
   background: transparent;
   text-align: center;
   padding: 40px 20px;
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(28px, 4vw, 48px); /* responsive font size */
   font-weight: 600;
   letter-spacing: 2px;
   color: #000;
@@ -33,8 +34,9 @@ header {
   padding: 40px;
 }
 
+
 .card {
-  background: transparent;  
+  background: transparent;  /* Grid Background */
   border-radius: 10px;
   padding: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -42,35 +44,30 @@ header {
   text-align: center;
 }
 .card {
-  flex: 1 1 calc(45% - 40px); 
+  flex: 1 1 calc(45% - 40px);  /* 3 in a row minus gap */
   max-width: 500px;
   padding: 35px;
 }
+
 
 .card:hover {
   transform: translateY(-5px);
   background-color: transparent;
 }
+.card a:hover {
+  color: #eb0707;
+}
 
+/* Link Styling */
 .card a {
   color: #000;
   font-size: clamp(18px, 3vw, 26px);
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
-.card a:hover {
-  color: #eb0707;
-}
-
 @media (max-width: 768px) {
   .card {
     flex: 1 1 100%;
     max-width: 90%;
   }
 }
-
-
-
-
-
