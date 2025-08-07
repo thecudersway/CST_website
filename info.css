@@ -29,6 +29,7 @@ header {
   font-weight: 600;
   letter-spacing: 2px;
   color: #000;
+  font-family: "Oswald", sans-serif;
 }
 
 .grid {
@@ -88,5 +89,6 @@ header {
     max-width: 100%;
   }
 }
+
 
 
