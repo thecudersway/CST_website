@@ -55,7 +55,7 @@ header {
   background-color: transparent;
 }
 .card a:hover {
-  color: #eb0707;
+  color: #ffffff;
 }
 
 /* Link Styling */
@@ -71,4 +71,5 @@ header {
     max-width: 90%;
   }
 }
+
 
