@@ -1,12 +1,7 @@
 body {
       font-family: Arial, sans-serif;
-      background-image: url("bgh.png");
+      background-image: url("/bgh.png");
       background-size: cover;
-      background-position: center;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
     }
 
     h1 {
@@ -37,8 +32,8 @@ body {
 
     .accordion label {
       display: block;
-      background: #007bff;
-      color: #fff;
+      background:transparent;
+      color: #000000;
       padding: 15px;
       font-size: 18px;
       font-weight: bold;
@@ -50,7 +45,7 @@ body {
     .accordion .content {
       display: none;
       padding: 10px;
-      background: #f9f9f9;
+      background:transparent;
       border-radius: 5px;
     }
 
@@ -65,19 +60,19 @@ body {
 
     .nested label {
       display: block;
-      background: #eee;
-      color: #333;
+      background:transparent;
+      color: #0b0b0b;
       padding: 10px;
       margin: 5px 0;
       cursor: pointer;
-      border: 1px solid #ccc;
+      border: 1px solid #000000;
       border-radius: 5px;
     }
 
     .nested .subcontent {
       display: none;
       padding: 10px 20px;
-      background: #fafafa;
+      background:transparent;
       border-radius: 5px;
       margin-bottom: 10px;
     }
@@ -94,17 +89,17 @@ body {
 
     a {
       text-decoration: none;
-      color: #141414;
+      color: rgb(0, 0, 0);
       font-weight: bold;
     }
 
     a:hover {
       text-decoration: underline;
-      color: #204abb;
+      color: #09090a;
     }
 
     p{
-      color: #007bff;
+      color:rgb(0, 0, 0);
       size: 12rem;
     }
 
@@ -116,16 +111,15 @@ body {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      border: 2px solid #ddd;
+      border: 2px solid #040404;
       border-radius: 10px;
-      font-family: "Oswald", sans-serif;
     }
 
     .floor_text {
       text-align: center;
       margin-top: 10px;
       font-size: 1.1rem;
-      color: #222;
+      color: #0d0d0d;
     }
 
     @keyframes fadeIn {
@@ -167,7 +161,3 @@ body {
         height: 220px;
       }
     }
-
-
-
-
