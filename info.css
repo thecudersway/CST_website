@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-  background-image: url('bg18.jpg');
+  background-image: url('bg58.png');
   background-size: cover;         /* cover full screen */
   background-repeat: no-repeat;   /* no repeat */
   background-position: center;    /* center the image */
@@ -71,4 +71,5 @@ header {
     max-width: 90%;
   }
 }
+
 
