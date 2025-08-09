@@ -1,6 +1,6 @@
 body {
       font-family: Arial, sans-serif;
-      background-image: url("/bgh.png");
+      background-image: url("bgh.png");
       background-size: cover;
     }
 
@@ -161,3 +161,4 @@ body {
         height: 220px;
       }
     }
+
