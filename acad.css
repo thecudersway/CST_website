@@ -14,6 +14,7 @@ body {
       margin-bottom: 20px;
       color: #0a0a0a;
       font-size: 2rem;
+      font-family: "Oswald", sans-serif;
     }
 
     .container {
@@ -117,6 +118,7 @@ body {
       background-position: center;
       border: 2px solid #ddd;
       border-radius: 10px;
+      font-family: "Oswald", sans-serif;
     }
 
     .floor_text {
@@ -165,6 +167,7 @@ body {
         height: 220px;
       }
     }
+
 
 
 
