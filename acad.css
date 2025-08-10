@@ -30,6 +30,10 @@ body {
       display: none;
     }
 
+    .accordion :hover{
+      color: rgb(255, 255, 255);
+    }
+
     .accordion label {
       display: block;
       background:transparent;
@@ -161,4 +165,5 @@ body {
         height: 220px;
       }
     }
+
 
