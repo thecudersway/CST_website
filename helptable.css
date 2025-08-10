@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     margin: 20px;
+    font-family: "Oswald", sans-serif;
 }
 
 h1 {
    text-align: center;
    color: #2c3e50;
    margin-bottom: 20px;  
-   font-family: "Oswald", sans-serif;
 }
 
 /* Heading */
@@ -122,4 +122,5 @@ tr:nth-child(even) {
         max-width: 180px;
     }
 }
+
 
