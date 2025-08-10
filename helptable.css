@@ -9,7 +9,6 @@ h1 {
    text-align: center;
    color: #2c3e50;
    margin-bottom: 20px;  
-   font-family: "Oswald", sans-serif;
 }
 
 /* Heading */
@@ -49,7 +48,7 @@ td {
 
 /* Row Hover Effect */
 tr:hover {
-    background-color: #f1f1f1;
+    background-color: #C0C0C0;
     transition: 0.3s;
 }
 
@@ -72,6 +71,13 @@ tr:nth-child(even) {
     height: auto;
     border: 2px solid #ddd;
     border-radius: 8px;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
 
 @media (max-width: 1024px) {
