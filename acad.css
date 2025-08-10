@@ -1,7 +1,12 @@
-body {
+ body {
       font-family: Arial, sans-serif;
       background-image: url("bgh.png");
       background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
     }
 
     h1 {
@@ -9,17 +14,18 @@ body {
       margin-bottom: 20px;
       color: #0a0a0a;
       font-size: 2rem;
-      font-family: "Oswald", sans-serif;
     }
 
+    /* Layout Wrapper */
     .container {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       gap: 20px;
-      flex-wrap: wrap; 
+      flex-wrap: wrap; /* responsive stacking */
     }
 
+    /* Accordion Section */
     .accordion {
       flex: 1;
       min-width: 300px;
@@ -30,14 +36,10 @@ body {
       display: none;
     }
 
-    .accordion :hover{
-      color: rgb(255, 255, 255);
-    }
-
     .accordion label {
       display: block;
-      background:transparent;
-      color: #000000;
+      background: #007bff;
+      color: #fff;
       padding: 15px;
       font-size: 18px;
       font-weight: bold;
@@ -49,7 +51,7 @@ body {
     .accordion .content {
       display: none;
       padding: 10px;
-      background:transparent;
+      background: #f9f9f9;
       border-radius: 5px;
     }
 
@@ -58,25 +60,27 @@ body {
       animation: fadeIn 0.3s ease-in-out;
     }
 
+    /* Nested Accordion */
     .nested input {
       display: none;
     }
 
     .nested label {
       display: block;
-      background:transparent;
-      color: #0b0b0b;
+      background: #eee;
+      color: #333;
       padding: 10px;
       margin: 5px 0;
       cursor: pointer;
-      border: 1px solid #000000;
+      border: 1px solid #ccc;
       border-radius: 5px;
     }
 
     .nested .subcontent {
       display: none;
       padding: 10px 20px;
-      background:transparent;
+      /* border-left: 3px solid #007bff; */
+      background: #fafafa;
       border-radius: 5px;
       margin-bottom: 10px;
     }
@@ -93,20 +97,21 @@ body {
 
     a {
       text-decoration: none;
-      color: rgb(0, 0, 0);
+      color: #141414;
       font-weight: bold;
     }
 
     a:hover {
       text-decoration: underline;
-      color: #09090a;
+      color: #204abb;
     }
 
     p{
-      color:rgb(0, 0, 0);
+      color: #007bff;
       size: 12rem;
     }
 
+    /* Floor Map Section */
     .Floormap {
       flex: 1;
       width: 50rem;
@@ -115,7 +120,7 @@ body {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      border: 2px solid #040404;
+      border: 2px solid #ddd;
       border-radius: 10px;
     }
 
@@ -123,9 +128,10 @@ body {
       text-align: center;
       margin-top: 10px;
       font-size: 1.1rem;
-      color: #0d0d0d;
+      color: #222;
     }
 
+    /* Animations */
     @keyframes fadeIn {
       from {opacity: 0;}
       to {opacity: 1;}
@@ -136,6 +142,7 @@ body {
       to {max-height: 500px; opacity: 1;}
     }
 
+    /* Responsive */
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -165,5 +172,3 @@ body {
         height: 220px;
       }
     }
-
-
