@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("best.jpg");
+    background-image: url("/best.jpg");
     background-size: cover;
 }
 
@@ -97,7 +97,7 @@ body {
 .vc {
     width: 70%;
     height: 20rem;
-    border: 3px solid rgb(179, 176, 176);
+    border: 4px solid rgb(179, 176, 176);
     border-radius: 2rem;
     align-self: center;
     display: flex;
@@ -106,7 +106,7 @@ body {
 }
 
 .vc:hover {
-    border: 5px solid rgb(25, 44, 106);
+    border: 4px solid rgb(25, 44, 106);
 }
 
 .vc_pic {
@@ -281,7 +281,6 @@ body {
         font-size: 0.8rem;
     }
 }
-
 
 
 
