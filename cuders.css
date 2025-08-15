@@ -30,11 +30,13 @@ body {
     background-image: url("cuders_group3.jpg");
     background-size: cover;
     background-position: center;
+    box-shadow: 0 6px 15px rgba(146, 57, 57, 0.5);
+     transform: scale(1.03);
 }
-.group_pic:hover{
+/* .group_pic:hover{
     box-shadow: 0 6px 15px rgba(146, 57, 57, 0.5);
     transform: scale(1.03);
-}
+} */
 /* Responsiveness */
 @media (max-width: 600px) {
     .group_pic {
@@ -70,6 +72,7 @@ body {
     border: 5px solid transparent;
     box-shadow: 0 6px 15px rgba(146, 57, 57, 0.5);
     transform: scale(1.03);
+    padding:5px;
 }
 
 
