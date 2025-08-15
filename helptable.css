@@ -49,14 +49,14 @@ td {
 
 /* Row Hover Effect */
 tr:hover {
-    background-color: #C0C0C0;
+    background-color: #dbd8d8;
     transition: 0.3s;
 }
 
 /* Alternate row coloring */
-tr:nth-child(even) {
+/* tr:nth-child(even) {
     background-color: #fafafa;
-}
+} */
 
 /* ✅ Scanner Section (Center + Responsive) */
 .Scanner {
@@ -122,6 +122,5 @@ tr:nth-child(even) {
         max-width: 180px;
     }
 }
-
 
 
