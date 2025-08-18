@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("/best.jpg");
+    background-image: url("best.jpg");
     background-size: cover;
 }
 
@@ -281,6 +281,7 @@ body {
         font-size: 0.8rem;
     }
 }
+
 
 
 
